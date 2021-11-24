@@ -20,15 +20,15 @@ function fetchMovies(url){
 }
 function showMovies(data){
     main.innerHTML="";
-// the title for TV shows will be"name"
+
     data.forEach(movie => {
-            const {name, vote_average, overview,poster_path}= movie
+            const {title, vote_average, overview,poster_path}= movie
             const movieElement = document.createElement('div');
             movieElement.classList.add('movie');
             movieElement.innerHTML= `
-                <img src="${baseImage+poster_path}" alt="${name}">
+                <img src="${baseImage+poster_path}" alt="${title}">
                 <div class="movie-info">
-                    <h2>${name}</h2>
+                    <h2>${title}</h2>
                     <span class="${getColor(vote_average)}">${vote_average}</span>
                 </div>
                 <div class="overview">

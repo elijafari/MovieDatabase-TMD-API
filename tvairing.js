@@ -22,13 +22,13 @@ function showMovies(data){
     main.innerHTML="";
 
     data.forEach(movie => {
-            const {title, vote_average, overview,poster_path}= movie
+            const {name, vote_average, overview,poster_path}= movie
             const movieElement = document.createElement('div');
             movieElement.classList.add('movie');
             movieElement.innerHTML= `
-                <img src="${baseImage+poster_path}" alt="${title}">
+                <img src="${baseImage+poster_path}" alt="${name}">
                 <div class="movie-info">
-                    <h2>${title}</h2>
+                    <h2>${name}</h2>
                     <span class="${getColor(vote_average)}">${vote_average}</span>
                 </div>
                 <div class="overview">

@@ -20,7 +20,7 @@ function fetchMovies(url){
 }
 function showMovies(data){
     main.innerHTML="";
-
+// the title for TV shows will be"name"
     data.forEach(movie => {
             const {name, vote_average, overview,poster_path}= movie
             const movieElement = document.createElement('div');

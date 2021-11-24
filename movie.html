@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="movie.css">
+        <title>Movie App</title>
+    </head>
+    <body>
+        <header>
+            <img src="Netflix_Logo.png" class="netflix" alt="netflix log">
+            <nav>
+                <div class="navbar">
+                    <a href="movie.html" >Home</a>
+                    <div class="subnav">
+                      <button class="subnavbtn">Genres <i class="fa fa-caret-down"></i></button>
+                        <div class="subnav-content">
+                                <a href="#company" onclick="family()">Family Movies</a>
+                                <a href="#team" onclick="animation()" >Animation Fantasy</a>
+                                <a href="#careers" onclick="documentary()" >Documentary</a>
+                                <a href="#careers" onclick="action()" id="28,10752,37">Action</a>
+                        </div>
+                    </div>
+                    <a href="tvairing.html" >TV Airing Today</a>
+            </nav>
+            <form class="form" id="form">
+                <input type="text" placeholder="Search movie" id="search" class="search">
+            </form>
+        </header>
+        <main id="main">
+            <div class="movie">
+                <img src="https://source.unsplash.com/1600x900/?movie" alt="image">
+                <div class="movie-info">
+                    <h3>Movie Title</h3>
+                    <span class="green">8.2</span>
+                </div>
+                <div class="overview">
+                    <h3>Overview</h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi labore quia impedit possimus, magni quis consequuntur odit. Voluptatem quisquam error repellat similique cumque! Dolores perspiciatis reprehenderit quae, perferendis minima possimus?
+
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://source.unsplash.com/1600x900/?action" alt="image">
+                <div class="movie-info">
+                    <h3>Movie Title</h3>
+                    <span class="green">8.2</span>
+                </div>
+                <div class="overview">
+                    <h3>Overview</h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi labore quia impedit possimus, magni quis consequuntur odit. Voluptatem quisquam error repellat similique cumque! Dolores perspiciatis reprehenderit quae, perferendis minima possimus?
+
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://source.unsplash.com/1600x900/?water" alt="image">
+                <div class="movie-info">
+                    <h3>Movie Title</h3>
+                    <span class="green">8.2</span>
+                </div>
+                <div class="overview">
+                    <h2>Overview</h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi labore quia impedit possimus, magni quis consequuntur odit. Voluptatem quisquam error repellat similique cumque! Dolores perspiciatis reprehenderit quae, perferendis minima possimus?
+                </div>
+            </div>
+        </main>
+        <script src="movie.js"></script>
+    </body>
+</html>
